@@ -1,72 +1,70 @@
 package javafx.quanlydssp;
 
 public class Products {
-    public String productID;
-    public String name;
-    public String unit;
-    public Float price;
-    public Integer quantity;
+    public String inputID, inputName, inputUnit;
+    public Float inputPrice;
+    public Integer inputQuantity;
 
     //contructor
     public Products() {
     }
-    public Products(String productID, String name, String unit, Float price, Integer quantity) {
-        this.productID = productID;
-        this.name = name;
-        this.unit = unit;
-        this.price = price;
-        this.quantity = quantity;
+    public Products(String inputID, String inputName, String inputUnit, Float inputPrice, Integer inputQuantity) {
+        this.inputID = inputID;
+        this.inputName = inputName;
+        this.inputUnit = inputUnit;
+        this.inputPrice = inputPrice;
+        this.inputQuantity = inputQuantity;
     }
 
     //getter & setter
-    public String getProductID() {
-        return productID;
+    public String getInputID() {
+        return inputID;
     }
 
-    public void setProductID(String productID) {
-        this.productID = productID;
+    public void setInputID(String inputID) {
+        this.inputID = inputID;
     }
 
-    public String getName() {
-        return name;
+    public String getInputName() {
+        return inputName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setInputName(String inputName) {
+        this.inputName = inputName;
     }
 
-    public String getUnit() {
-        return unit;
+    public String getInputUnit() {
+        return inputUnit;
     }
 
-    public void setUnit(String unit) {
-        this.unit = unit;
+    public void setInputUnit(String inputUnit) {
+        this.inputUnit = inputUnit;
     }
 
-    public Float getPrice() {
-        return price;
+    public Float getInputPrice() {
+        return inputPrice;
     }
 
-    public void setPrice(Float price) {
-        this.price = price;
+    public void setInputPrice(Float inputPrice) {
+        this.inputPrice = inputPrice;
     }
 
-    public Integer getQuantity() {
-        return quantity;
+    public Integer getInputQuantity() {
+        return inputQuantity;
     }
 
-    public void setQuantity(Integer quantity) {
-        this.quantity = quantity;
+    public void setInputQuantity(Integer inputQuantity) {
+        this.inputQuantity = inputQuantity;
     }
 
     //Input
-    public String inputProducts(){
-        String s = "";
-        s += getProductID();
-        s += getName();
-        s += getUnit();
-        s += getPrice();
-        s += getQuantity();
-        return s;
-    }
+//    public String inputProducts(){
+//        String s = "";
+//        s += getInputID();
+//        s += getInputName();
+//        s += getInputUnit();
+//        s += getInputPrice();
+//        s += getInputQuantity();
+//        return s;
+//    }
 }
