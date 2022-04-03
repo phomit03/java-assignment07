@@ -1,17 +1,17 @@
-package javafx.quanlydssp;
+package javafx_quanlydssp;
 
-        import javafx.application.Application;
-        import javafx.fxml.FXMLLoader;
-        import javafx.scene.Parent;
-        import javafx.scene.Scene;
-        import javafx.stage.Stage;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
 public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("form.fxml"));
-        primaryStage.setTitle("Quan Ly Danh Sach San Pham");
+        primaryStage.setTitle("Quản Lý Danh Sách Sản Phẩm");
         primaryStage.setScene(new Scene(root, 800, 600));
         primaryStage.show();
     }

@@ -1,4 +1,4 @@
-package javafx.quanlydssp;
+package javafx_quanlydssp;
 
 public class Products {
     public String inputID, inputName, inputUnit;

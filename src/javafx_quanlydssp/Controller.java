@@ -1,4 +1,4 @@
-package javafx.quanlydssp;
+package javafx_quanlydssp;
 
 import javafx.scene.control.*;
 import javafx.scene.paint.Paint;
