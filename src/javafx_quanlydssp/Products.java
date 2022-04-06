@@ -2,13 +2,13 @@ package javafx_quanlydssp;
 
 public class Products {
     public String inputID, inputName, inputUnit;
-    public Float inputPrice;
+    public Double inputPrice;
     public Integer inputQuantity;
 
     //contructor
     public Products() {
     }
-    public Products(String inputID, String inputName, String inputUnit, Float inputPrice, Integer inputQuantity) {
+    public Products(String inputID, String inputName, String inputUnit, Double inputPrice, Integer inputQuantity) {
         this.inputID = inputID;
         this.inputName = inputName;
         this.inputUnit = inputUnit;
@@ -41,11 +41,11 @@ public class Products {
         this.inputUnit = inputUnit;
     }
 
-    public Float getInputPrice() {
+    public Double getInputPrice() {
         return inputPrice;
     }
 
-    public void setInputPrice(Float inputPrice) {
+    public void setInputPrice(Double inputPrice) {
         this.inputPrice = inputPrice;
     }
 

@@ -45,7 +45,7 @@
       </Text>
       <TextField fx:id="inputQuantity" layoutX="549.0" layoutY="117.0" prefHeight="29.0" prefWidth="216.0" promptText="Input Quantity" />
 
-      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="470.0" layoutY="179.0" mnemonicParsing="false" onAction="#addProducts" prefHeight="29.0" prefWidth="158.0" text="Add Products" textAlignment="CENTER">
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="498.0" layoutY="180.0" mnemonicParsing="false" onAction="#addProducts" prefHeight="29.0" prefWidth="158.0" text="Add Products" textAlignment="CENTER">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
@@ -58,11 +58,14 @@
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Text>
-      
-      <TextArea fx:id="outputID" layoutX="28.0" layoutY="310.0" prefHeight="277.0" prefWidth="126.0" text="   ID Products" />
-      <TextArea fx:id="outputName" layoutX="153.0" layoutY="310.0" prefHeight="277.0" prefWidth="207.0" text="          Name Products" />
-      <TextArea fx:id="outputUnit" layoutX="359.0" layoutY="310.0" prefHeight="277.0" prefWidth="149.0" text="            Unit" />
-      <TextArea fx:id="outputPrice" layoutX="507.0" layoutY="310.0" prefHeight="277.0" prefWidth="140.0" text="          Price" />
-      <TextArea fx:id="outputQuantity" layoutX="646.0" layoutY="310.0" prefHeight="277.0" prefWidth="119.0" text="     Quantity" />
+      <TableView fx:id="tbProducts" layoutX="28.0" layoutY="310.0" prefHeight="277.0" prefWidth="739.0">
+        <columns>
+          <TableColumn fx:id="cID" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="cName" prefWidth="249.0" text="Name Products" />
+            <TableColumn fx:id="cUnit" minWidth="0.0" prefWidth="148.0" text="Unit" />
+            <TableColumn fx:id="cPrice" prefWidth="159.0" text="Price" />
+            <TableColumn fx:id="cQuantity" prefWidth="107.0" text="Quantity" />
+        </columns>
+      </TableView>
    </children>
 </Pane>
